@@ -1,0 +1,5 @@
+pandas
+openpyxl
+docxtpl
+
+supporting https://www.youtube.com/watch?v=Zy9sx4GvjUY
