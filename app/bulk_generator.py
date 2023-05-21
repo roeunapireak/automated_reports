@@ -8,13 +8,9 @@ word_template_path = base_dir / "P1S945_01.docx"
 excel_path = base_dir / "P1S945_01.xlsx"
 reports_dir = base_dir / "reports_generator"
 
-print(word_template_path)
-print(excel_path)
-print(reports_dir)
-
 # read excel file and clean the data 
 df = pd.read_excel(excel_path, sheet_name="students")
-P1S945_01_dataframe = df.fillna(" ")
+P1S945_01_dataframe = df.fillna("")
 
 dict = P1S945_01_dataframe.to_dict(orient="records")
 print(dict)
